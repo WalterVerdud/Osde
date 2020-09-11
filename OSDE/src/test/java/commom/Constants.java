@@ -15,12 +15,14 @@ public class Constants {
     public static String textoNumerico = "0123456789";
 
     // RUTA DE ARCHIVOS ADJUNTOS
+
     public static String imagenValidaJPG = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/1-JPG-valido.jpg";
     public static String imagenInvalidaJPG = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/2-JPG-invalido.jpg";
     public static String imagenValidaPNG = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/3-PNG-valido.png";
     public static String imagenInvalidaPNG = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/4-PNG-invalido.png";
     public static String imagenValidaPDF = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/5-PDF-valido.pdf";
     public static String imagenInvalidaPDF = System.getProperty("user.dir") + "/src/test/resources/Archivos adjuntos/6-PDF-invalido.pdf";
+
 
 
 

@@ -7,8 +7,8 @@ quadiontech/Tests/ProductosOrtopedia.class
 quadiontech/Tests/Login/LoginTest.class
 quadiontech/Tests/Anticonceptivos/AnticonceptivosTest.class
 quadiontech/Pages/LoginPage.class
+commom/Constants.class
 quadiontech/Tests/ConsultaMedicaTest.class
-quadiontech/Tests/Internacion.class
 quadiontech/Pages/Pagos/PagosPage.class
 quadiontech/Tests/KinesiologiaTest.class
 quadiontech/Pages/Anticonceptivos/AnticonceptivosPage.class

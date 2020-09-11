@@ -73,6 +73,11 @@ public class OtrasTicket extends BasePage {
         File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\CapturasReintegros\\OtrasTicket.png");
         FileUtils.copyFile(scrFile, screenshotFile);
 
+        WebElement BtnVolverInicio = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.VolverInicio));
+        BtnVolverInicio.click();
+        WebElement btnCerrarSesion = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.CerrarSesion));
+        btnCerrarSesion.click();
+
     }
 
     @AfterMethod(alwaysRun = true)

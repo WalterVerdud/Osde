@@ -2,27 +2,21 @@ package quadiontech.Tests;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import quadiontech.Pages.BasePage;
 import quadiontech.Pages.GestionarReintegrosPage;
 import quadiontech.Pages.LoginPage;
-
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
-import static quadiontech.Pages.GestionarReintegrosPage.AdjTicket;
-import static quadiontech.Pages.GestionarReintegrosPage.BoxTyC;
+
 
 public class KinesiologiaTest extends BasePage {
-    WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
-    public void initBrowser(){
+    public void setUp(){
         abrir();
     }
 

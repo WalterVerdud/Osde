@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Walter/IdeaProjects/OSDE/src/test/java/quadiontech/Tests"><classes><class name="quadiontech.Tests.Internacion"><methods><include name="internacinCirugia"/></methods></class><class name="quadiontech.Tests.Login.LoginTest"><methods><include name="setUp"/></methods></class></classes></test></suite>

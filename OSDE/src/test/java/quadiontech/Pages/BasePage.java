@@ -55,7 +55,7 @@ public class BasePage {
 
 
     /// WEBMOBILE: START
-    public void initBrowser() {
+    public void initBrowser() throws InterruptedException {
         try {
 
             By btnAdvancedLocator = By.id("details-button");

@@ -1,6 +1,5 @@
 /app/src/test/java/quadiontech/Pages/Pagos/PagosPage.java
 /app/src/test/java/quadiontech/Tests/ConsultaMedicaTest.java
-/app/src/test/java/quadiontech/Tests/Internacion.java
 /app/src/test/java/quadiontech/Tests/Pagos/PagosTest.java
 /app/src/test/java/quadiontech/Pages/GestionarReintegrosPage.java
 /app/src/test/java/quadiontech/Tests/MedicamentosTicket.java
@@ -11,6 +10,7 @@
 /app/src/test/java/quadiontech/Tests/ProductosOrtopedia.java
 /app/src/test/java/quadiontech/Pages/BasePage.java
 /app/src/test/java/quadiontech/Tests/ProdOrtopediaTicket.java
+/app/src/test/java/commom/Constants.java
 /app/src/test/java/quadiontech/Tests/Anticonceptivos/AnticonceptivosTest.java
 /app/src/test/java/quadiontech/Tests/Nutriciontest.java
 /app/src/test/java/quadiontech/Tests/Login/LoginTest.java

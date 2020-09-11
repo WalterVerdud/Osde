@@ -2,26 +2,21 @@ package quadiontech.Tests;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import quadiontech.Pages.BasePage;
 import quadiontech.Pages.GestionarReintegrosPage;
 import quadiontech.Pages.LoginPage;
-
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+
 
 public class MedicamentosFactura extends BasePage {
 
-    WebDriver driver;
-
     @BeforeMethod(alwaysRun = true)
-    public void initBrowser() {
+    public void setUp() {
 
         abrir();
     }
@@ -45,7 +40,7 @@ public class MedicamentosFactura extends BasePage {
         WebElement TipoPractica = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.PracticaLocator7));
         TipoPractica.click();
         WebElement PedidoMedico = wait.until(presenceOfElementLocated(GestionarReintegrosPage.AdjPedidoMedico));
-        PedidoMedico.sendKeys("C:/Users/Walter/IdeaProjects/OSDE/src/main/resources/Adjuntos/TestAdjuntoOsde.pdf");
+        PedidoMedico.sendKeys("C:/Users/Walter/IdeaProjects/OSDE/src/test/resources/Adjuntos/TestAdjuntoOsde.pdf");
         WebElement ConFactura = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.Factura));
         ConFactura.click();
         WebElement Cuit = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.NroCuit));
@@ -76,7 +71,7 @@ public class MedicamentosFactura extends BasePage {
         WebElement Importe = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.TextBoxImporte));
         Importe.sendKeys("1000");
         WebElement AdjuntarComp = wait.until(presenceOfElementLocated(GestionarReintegrosPage.AdjComprobante));
-        AdjuntarComp.sendKeys("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\main\\resources\\Adjuntos\\TestOsde.pdf");
+        AdjuntarComp.sendKeys("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\Adjuntos\\TestOsde.pdf");
         WebElement TerminosCondic = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.BoxTyC));
         TerminosCondic.click();
         WebElement BotonEnviar = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.EnviarReintegro));
@@ -89,6 +84,11 @@ public class MedicamentosFactura extends BasePage {
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\CapturasReintegros\\MedicamentosFactura.png");
         FileUtils.copyFile(scrFile, screenshotFile);
+
+        WebElement BtnVolverInicio = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.VolverInicio));
+        BtnVolverInicio.click();
+        WebElement btnCerrarSesion = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.CerrarSesion));
+        btnCerrarSesion.click();
     }
 
     @AfterMethod(alwaysRun = true)

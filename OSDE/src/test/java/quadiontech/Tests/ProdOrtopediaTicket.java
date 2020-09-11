@@ -17,10 +17,9 @@ import java.text.SimpleDateFormat;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class ProdOrtopediaTicket extends BasePage {
-    WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
-    public void initBrowser() {
+    public void setUp() {
 
         abrir();
 
@@ -68,10 +67,14 @@ public class ProdOrtopediaTicket extends BasePage {
         jse.executeScript("scroll(0, -250);");
 
         Thread.sleep(3000);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyMMdd-HHmm");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\CapturasReintegros\\ProducOrtopediaTicket.png");
         FileUtils.copyFile(scrFile, screenshotFile);
+
+        WebElement BtnVolverInicio = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.VolverInicio));
+        BtnVolverInicio.click();
+        WebElement btnCerrarSesion = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.CerrarSesion));
+        btnCerrarSesion.click();
     }
 
 

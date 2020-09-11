@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectTest" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -49,19 +49,27 @@
       <recent name="C:\Users\Walter\IdeaProjects\OSDE\src\main\resources\Driver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PagosTest">
-    <configuration name="C:/Users/Walter/IdeaProjects/OSDE/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AnticonceptivosTest">
+    <configuration name="AnticonceptivosTest" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quadiontech.Tests.Anticonceptivos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="quadiontech.Tests.Anticonceptivos" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.Anticonceptivos.AnticonceptivosTest" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
@@ -69,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsultaMedicaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsultaMedicaTest" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quadiontech.Tests.Anticonceptivos.*" />
+          <option name="PATTERN" value="quadiontech.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Internacion" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MedicamentosFactura" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -161,7 +169,34 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="quadiontech.Tests" />
-      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.Internacion" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.MedicamentosFactura" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea  -Dtestng.dtd.http=true" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Nutriciontest" type="TestNG" nameIsGenerated="true">
+      <module name="OSDE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quadiontech.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="quadiontech.Tests" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.Nutriciontest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
@@ -177,7 +212,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KinesiologiaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Odontologia" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -188,7 +223,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="quadiontech.Tests" />
-      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.KinesiologiaTest" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.Odontologia" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
@@ -204,22 +239,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagosTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OtrasFactura" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quadiontech.Tests.Pagos.*" />
+          <option name="PATTERN" value="quadiontech.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="quadiontech.Tests.Pagos" />
-      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.Pagos.PagosTest" />
+      <option name="PACKAGE_NAME" value="quadiontech.Tests" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.OtrasFactura" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value=" " />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -231,7 +266,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PsicologiaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdOrtopediaTicket" type="TestNG" nameIsGenerated="true">
       <module name="OSDE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -242,7 +277,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="quadiontech.Tests" />
-      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.PsicologiaTest" />
+      <option name="MAIN_CLASS_NAME" value="quadiontech.Tests.ProdOrtopediaTicket" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
@@ -292,6 +327,7 @@
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
@@ -329,22 +365,14 @@
       <item itemvalue="TestNG.quadiontech" />
       <item itemvalue="TestNG.Suite" />
       <item itemvalue="TestNG.Test" />
-      <item itemvalue="TestNG.KinesiologiaTest" />
+      <item itemvalue="TestNG.MedicamentosFactura" />
       <item itemvalue="TestNG.ConsultaMedicaTest" />
-      <item itemvalue="TestNG.PsicologiaTest" />
-      <item itemvalue="TestNG.Internacion" />
-      <item itemvalue="TestNG.C:/Users/Walter/IdeaProjects/OSDE/testng.xml" />
-      <item itemvalue="TestNG.PagosTest" />
+      <item itemvalue="TestNG.Nutriciontest" />
+      <item itemvalue="TestNG.Odontologia" />
+      <item itemvalue="TestNG.OtrasFactura" />
+      <item itemvalue="TestNG.ProdOrtopediaTicket" />
+      <item itemvalue="TestNG.AnticonceptivosTest" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.PagosTest" />
-        <item itemvalue="TestNG.ConsultaMedicaTest" />
-        <item itemvalue="TestNG.C:/Users/Walter/IdeaProjects/OSDE/testng.xml" />
-        <item itemvalue="TestNG.Internacion" />
-        <item itemvalue="TestNG.PsicologiaTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -377,11 +405,11 @@
     </state>
     <state x="1946" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1597264223586" />
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595036642770" />
-    <state x="1715" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599600130777">
+    <state x="1715" y="105" width="1092" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599832192788">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1598988738271" />
-    <state x="1715" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599600130777" />
+    <state x="1715" y="105" width="1092" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599832192788" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594759505805" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595288456416">
       <screen x="0" y="0" width="1366" height="728" />
@@ -421,29 +449,29 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2106" y="275" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598297852188" />
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1599600519527">
+    <state width="1860" height="303" key="GridCell.Tab.0.bottom" timestamp="1599773468496">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="371" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1598989150716" />
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599600519527" />
+    <state width="1860" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599773468496" />
     <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595289563815" />
-    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1599600519526">
+    <state width="1860" height="303" key="GridCell.Tab.0.center" timestamp="1599773468496">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="371" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1598989150716" />
-    <state width="1877" height="303" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599600519526" />
+    <state width="1860" height="303" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599773468496" />
     <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595289563814" />
-    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1599600519526">
+    <state width="1860" height="303" key="GridCell.Tab.0.left" timestamp="1599773468496">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="371" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1598989150708" />
-    <state width="1877" height="303" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599600519526" />
+    <state width="1860" height="303" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599773468496" />
     <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595289563814" />
-    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1599600519527">
+    <state width="1860" height="303" key="GridCell.Tab.0.right" timestamp="1599773468496">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="371" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1598989150716" />
-    <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599600519527" />
+    <state width="1860" height="303" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599773468496" />
     <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595289563815" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597872698434">
       <screen x="1366" y="0" width="1920" height="1040" />
@@ -461,10 +489,10 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1597872698434" />
-    <state x="1827" y="162" key="SettingsEditor" timestamp="1598033733388">
+    <state x="1827" y="162" key="SettingsEditor" timestamp="1599761536531">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="1827" y="162" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598033733388" />
+    <state x="1827" y="162" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599761536531" />
     <state x="230" y="112" key="caller.chooser.dialog" timestamp="1595034032239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -474,11 +502,11 @@
     </state>
     <state x="2067" y="203" key="chooseDestDirectoryDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1597955973386" />
     <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1595000180814" />
-    <state x="1906" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1599676279898">
+    <state x="1906" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1599827778347">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599484890544" />
-    <state x="1906" y="269" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599676279898" />
+    <state x="1906" y="269" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599827778347" />
     <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595271004745" />
     <state x="1457" y="84" key="new project wizard" timestamp="1597768042507">
       <screen x="1366" y="0" width="1920" height="1040" />

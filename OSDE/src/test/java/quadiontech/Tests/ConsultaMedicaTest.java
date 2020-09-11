@@ -12,13 +12,13 @@ import java.io.File;
 import java.io.IOException;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
-
 public class ConsultaMedicaTest extends BasePage {
 
 
     @BeforeMethod(alwaysRun = true)
     public void setUp(){
         abrir();
+
     }
 
 
@@ -80,8 +80,9 @@ public class ConsultaMedicaTest extends BasePage {
         //Screenshot
         Thread.sleep(4000);
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\main\\resources\\CapturasReintegros\\ConsultaMedica.png");
+        File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\CapturasReintegros\\ConsultaMedica.png");
         FileUtils.copyFile(scrFile, screenshotFile);
+
         WebElement BtnVolverInicio = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.VolverInicio));
         BtnVolverInicio.click();
         WebElement btnCerrarSesion = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.CerrarSesion));

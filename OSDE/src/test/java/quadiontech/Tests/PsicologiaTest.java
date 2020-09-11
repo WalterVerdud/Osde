@@ -2,33 +2,28 @@ package quadiontech.Tests;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import quadiontech.Pages.BasePage;
 import quadiontech.Pages.GestionarReintegrosPage;
 import quadiontech.Pages.LoginPage;
-
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class PsicologiaTest extends BasePage {
-    WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
-    public void initBrowser(){
+    public void setUp(){
         abrir();
     }
 
 
-    @Test  (priority = 1, groups = {"reintegros"})
+    @Test (priority = 1, groups = {"reintegros"})
     public void psicologia() throws InterruptedException, IOException {
-
         WebDriverWait wait = new WebDriverWait(driver, 40);
+
         LoginPage user = new LoginPage();
         user.LoginReintegros(driver, GestionarReintegrosPage.Usuario);
 
@@ -85,6 +80,11 @@ public class PsicologiaTest extends BasePage {
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("C:\\Users\\Walter\\IdeaProjects\\OSDE\\src\\test\\resources\\CapturasReintegros\\Psicologia.png");
         FileUtils.copyFile(scrFile, screenshotFile);
+
+        WebElement BtnVolverInicio = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.VolverInicio));
+        BtnVolverInicio.click();
+        WebElement btnCerrarSesion = wait.until(ExpectedConditions.visibilityOfElementLocated(GestionarReintegrosPage.CerrarSesion));
+        btnCerrarSesion.click();
     }
 
     @AfterMethod(alwaysRun = true)
